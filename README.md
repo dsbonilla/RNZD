@@ -32,7 +32,7 @@ Endpoints
 
         pip install -r requirements.txt
 
-3. Configura la base de datos PostgreSQL y actualiza la URL en database.py.
+3. Configura la base de datos PostgreSQL (rnzd_db.sql) y actualiza la URL en database.py.
 
        SQLALCHEMY_DATABASE_URL = "postgresql://postgres:1234@localhost/rnzd_db"
 
