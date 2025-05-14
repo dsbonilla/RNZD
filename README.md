@@ -18,26 +18,28 @@ Endpoints
 
     DELETE /zonas-deforestadas/{id}: Eliminar una zona deforestada.
 
-Instalación
+1. Instalación
 
-git clone https://github.com/dsbonilla/rnzd.git
+        git clone https://github.com/dsbonilla/rnzd.git
 
-cd rnzd
+        cd rnzd
 
-Crea un entorno virtual e instala dependencias:
+2. Crea un entorno virtual e instala dependencias:
 
-python -m venv env
+        python -m venv env
 
-source env/bin/activate  # En Windows: env\Scripts\activate
+        source env/bin/activate  # En Windows: env\Scripts\activate
 
-pip install -r requirements.txt
+        pip install -r requirements.txt
 
-Configura la base de datos PostgreSQL y actualiza la URL en database.py.
+3. Configura la base de datos PostgreSQL y actualiza la URL en database.py.
 
-Inicia el servidor:
+       SQLALCHEMY_DATABASE_URL = "postgresql://postgres:1234@localhost/rnzd_db"
 
-uvicorn main:app --reload
+4. Inicia el servidor:
 
-API disponible en http://localhost:8000.
+        uvicorn main:app --reload
+
+5. API disponible en http://localhost:8000.
 
 Licencia MIT.
