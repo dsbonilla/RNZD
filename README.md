@@ -20,24 +20,24 @@ Endpoints
 
 Instalación
 
-    Clona el repositorio:
-
 git clone https://github.com/dsbonilla/rnzd.git
+
 cd rnzd
 
 Crea un entorno virtual e instala dependencias:
 
 python -m venv env
+
 source env/bin/activate  # En Windows: env\Scripts\activate
+
 pip install -r requirements.txt
 
 Configura la base de datos PostgreSQL y actualiza la URL en database.py.
 
 Inicia el servidor:
 
-    uvicorn main:app --reload
+uvicorn main:app --reload
 
 API disponible en http://localhost:8000.
-Licencia
 
 Licencia MIT.
